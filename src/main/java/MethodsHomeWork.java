@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class MethodsHomeWork {
 
     public static void main(String[] args) {
@@ -7,7 +9,9 @@ public class MethodsHomeWork {
         //printRectangle(17, 3);
         //printTriangle(4);
         //printRightAlignedTriangle(4);
-        xmasTree(10);
+        //xmasTree(10);
+        //System.out.println(least(8, 8));
+        //System.out.println(greatest(8, 8, 8));
     }
 
     private static void printStars(int amount){
@@ -110,5 +114,14 @@ public class MethodsHomeWork {
             stand++;
             System.out.print("\n");
         }
+    }
+
+    public static int least(int number1, int number2){
+        return Math.min(number1, number2);
+    }
+
+    public static int greatest(int number1, int number2, int number3) {
+        int number4 = Math.max(number1, number2);
+        return Math.max(number3, number4);
     }
 }
