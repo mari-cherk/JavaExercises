@@ -74,7 +74,7 @@ public class ArrayListHomeWork {
             System.out.println(number + " does not appear more than once.");
         }*/
 
-        Scanner reader = new Scanner(System.in);
+        /*Scanner reader = new Scanner(System.in);
 
         System.out.println("Type a text: ");
         String text = reader.nextLine();
@@ -83,7 +83,23 @@ public class ArrayListHomeWork {
         } else {
             System.out.println("The text is not a palindrome!");
         }
+*/
 
+        ArrayList<Integer> list1 = new ArrayList<Integer>();
+        ArrayList<Integer> list2 = new ArrayList<Integer>();
+
+        list1.add(4);
+        list1.add(3);
+
+        list2.add(4);
+        list2.add(3);
+        list2.add(4);
+
+        smartCombine(list1, list2);
+
+        System.out.println(list1);
+
+        System.out.println(list2);
     }
 
     public static void listOfWords(){
@@ -209,5 +225,17 @@ public class ArrayListHomeWork {
             i--;
         }
         return text.equals(help);
+    }
+
+    public static void combine(ArrayList<Integer> first, ArrayList<Integer> second){
+        first.addAll(second);
+    }
+
+    public static void smartCombine(ArrayList<Integer> first, ArrayList<Integer> second){
+        for(Integer x : second){
+            if(!first.contains(x)){
+                first.add(x);
+            }
+        }
     }
 }
