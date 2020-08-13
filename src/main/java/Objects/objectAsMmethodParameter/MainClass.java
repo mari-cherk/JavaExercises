@@ -62,7 +62,7 @@ public class MainClass {
 
         System.out.println( unicafeExactum );*/
 
-        CashRegister unicafeExactum = new CashRegister();
+        /*CashRegister unicafeExactum = new CashRegister();
         System.out.println( unicafeExactum );
 
         LyyraCard cardOfJim = new LyyraCard(2);
@@ -79,6 +79,15 @@ public class MainClass {
 
         System.out.println("the card balance " + cardOfJim.balance() + " euros");
 
-        System.out.println( unicafeExactum );
+        System.out.println( unicafeExactum );*/
+
+        Clock clock = new Clock(23, 59, 50);
+
+        int i = 0;
+        while( i < 20) {
+            System.out.println( clock );
+            clock.tick();
+            i++;
+        }
     }
 }
