@@ -41,8 +41,9 @@ public class Team {
     }
 
     public int goals(){
+
+        //return this.players.stream().reduce(0,(a, player) -> a + player.goals());
         //int goals = 0;
-        //this.players.stream().reduce(0,(a, player) -> a + player.goals(), Integer::sum);
         /*for (Player player : this.players){
             goals += player.goals();
         }*/
