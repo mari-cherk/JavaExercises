@@ -20,7 +20,6 @@ public class Library {
     }
 
     public ArrayList<Book> searchByTitle(String title) {
-
         ArrayList<Book> found = new ArrayList<Book>();
         //found = (ArrayList<Book>) this.books.stream().filter(x -> x.title().contains(title)).collect(Collectors.toList());
         found = (ArrayList<Book>) this.books.stream().filter(x -> StringUtils.included(x.title(), title)).collect(Collectors.toList());
