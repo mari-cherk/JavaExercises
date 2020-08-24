@@ -11,7 +11,7 @@ public class StringsHomeWork {
         //printDesiredPartOfWOrd();
         //printEndPartOfWOrd();
         //stringContainsWord();
-        System.out.println(reverse("marina"));
+        System.out.println(reverse1("marina"));
     }
 
     public static int calculateCharacters(){
@@ -112,4 +112,11 @@ public class StringsHomeWork {
         }
         return help;
     }
+
+    public static String reverse1(String text){
+
+        return new StringBuilder(text).reverse().toString();
+    }
+
+
 }

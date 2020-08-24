@@ -18,4 +18,6 @@ public class MainClassArray {
     public static void printElegantly(int[] array){
         Arrays.stream(array).forEach(x -> System.out.print(x + ", "));
     }
-}
+
+
+    }
